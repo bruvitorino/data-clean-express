@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataClean Express - Portfólio de Engenharia de Dados</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <h2><i class="fas fa-database"></i> DataClean Express</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#saas">SaaS Demo</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção Hero -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Transformando Dados em Insights</h1>
+                <p>Portfólio de Engenharia de Dados com foco em limpeza, validação e processamento de dados</p>
+                <div class="hero-buttons">
+                    <a href="#saas" class="btn btn-primary">Testar SaaS</a>
+                    <a href="#projects" class="btn btn-secondary">Ver Projetos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>Sobre o Projeto</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>Este portfólio demonstra habilidades práticas em engenharia de dados através de um SaaS funcional para limpeza e validação de dados CSV.</p>
+                        <div class="skills">
+                            <h3>Tecnologias Utilizadas:</h3>
+                            <div class="skill-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Flask</span>
+                                <span class="tag">Pandas</span>
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Código Próprio</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Funcionalidades</p>
+                        </div>
+                        <div class="stat">
+                            <h3>API</h3>
+                            <p>REST Completa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção SaaS Demo -->
+        <section id="saas" class="saas-demo">
+            <div class="container">
+                <h2>DataClean Express - Demo</h2>
+                <p>Faça upload de um arquivo CSV e veja a mágica acontecer!</p>
+                
+                <div class="upload-area">
+                    <div class="upload-box" id="uploadBox">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Clique aqui ou arraste seu arquivo CSV</p>
+                        <input type="file" id="fileInput" accept=".csv" hidden>
+                    </div>
+                </div>
+
+                <div class="processing-options" id="processingOptions" style="display: none;">
+                    <h3>Opções de Processamento:</h3>
+                    <div class="options-grid">
+                        <label>
+                            <input type="checkbox" id="removeDuplicates" checked>
+                            Remover duplicatas
+                        </label>
+                        <label>
+                            <input type="checkbox" id="handleNulls" checked>
+                            Tratar valores nulos
+                        </label>
+                        <label>
+                            <input type="checkbox" id="standardizeText" checked>
+                            Padronizar texto
+                        </label>
+                        <label>
+                            <input type="checkbox" id="validateFormats" checked>
+                            Validar formatos
+                        </label>
+                    </div>
+                    <button class="btn btn-primary" id="processBtn">Processar Dados</button>
+                </div>
+
+                <div class="results" id="results" style="display: none;">
+                    <h3>Resultados do Processamento:</h3>
+                    <div class="results-grid">
+                        <div class="result-card">
+                            <h4>Relatório de Validação</h4>
+                            <div id="validationReport"></div>
+                        </div>
+                        <div class="result-card">
+                            <h4>Dados Processados</h4>
+                            <div id="processedData"></div>
+                            <button class="btn btn-secondary" id="downloadBtn">Download CSV Limpo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Projetos -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Outros Projetos</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Pipeline de Dados ETL</h3>
+                        <p>Sistema automatizado de extração, transformação e carregamento de dados usando Python e Apache Airflow.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Airflow</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Dashboard de Analytics</h3>
+                        <p>Dashboard interativo para visualização de métricas de negócio em tempo real.</p>
+                        <div class="project-tags">
+                            <span class="tag">Streamlit</span>
+                            <span class="tag">Plotly</span>
+                            <span class="tag">Pandas</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>API de Dados</h3>
+                        <p>API REST para consulta e manipulação de grandes volumes de dados.</p>
+                        <div class="project-tags">
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contato</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/seu-usuario" target="_blank">GitHub</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://linkedin.com/in/seu-perfil" target="_blank">LinkedIn</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:seu-email@exemplo.com">Email</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 DataClean Express. Desenvolvido como projeto de portfólio em Engenharia de Dados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
